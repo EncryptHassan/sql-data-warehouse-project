@@ -1,3 +1,14 @@
+/*
+======================================================================================
+DDL Script: Create Silver Tables
+======================================================================================
+SCript Purpose:
+    This script creates tables in the 'silver' schema, dropping existing tables 
+    if they already exist.
+    Run this script to re-define the DDL structure of 'bronze' Tables
+======================================================================================
+*/
+
 EXECUTE silver.load_silver;
 
 CREATE OR ALTER PROCEDURE silver.load_silver AS 
