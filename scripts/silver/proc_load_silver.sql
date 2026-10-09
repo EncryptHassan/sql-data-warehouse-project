@@ -1,11 +1,16 @@
 /*
 ======================================================================================
-DDL Script: Create Silver Tables
+Stored Procedure:
 ======================================================================================
-SCript Purpose:
-    This script creates tables in the 'silver' schema, dropping existing tables 
-    if they already exist.
-    Run this script to re-define the DDL structure of 'bronze' Tables
+Script Purpose:
+    This stored preceddure performs the ETL (Extract, Transform, Load) process to populate the 'silver' Schema.
+Actions Performed:
+	- Truncate Silver tables.
+	- Inserts transformed and cleaned data from Bronze into Silver tables.
+Parameters: None
+	This stored procedure does not accept any parameters or return any values.
+Usage Example:
+	EXEC silver.load_silver;
 ======================================================================================
 */
 
